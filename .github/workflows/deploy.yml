@@ -25,7 +25,7 @@ jobs:
               run: 'mvn compile'  
             
             - name: Set permissions
-              uses: chmod 755 ./mvnw
+              run: chmod 755 ./mvnw
             
             - name: Build project
               run: ./mvnw clean package   
