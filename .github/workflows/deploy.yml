@@ -28,7 +28,7 @@ jobs:
               uses: chmod 755 ./mvnw
             
             - name: Build project
-              uses: ./mvnw clean package   
+              run: ./mvnw clean package   
 
             - name: Test application
               run: 'mvn test'
